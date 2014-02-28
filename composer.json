@@ -34,7 +34,8 @@
         "alexandresalome/mailcatcher":       "~0.2",
         "juliendidier/buzz-bundle":          "dev-master",
 
-        "gitonomy/git-bundle":               "~0.1",
+        "gitonomy/git-bundle":               "dev-fix_bad_links",
+        "gitonomy/gitlib":                   "dev-add_slug_option as 0.1",
 
         "leafo/lessphp":                    "~0.4"
     },
@@ -42,6 +43,10 @@
         "behat/behat":                   "~2.5",
         "alexandresalome/php-webdriver": "~0.7"
     },
+    "repositories": [
+        { "type": "git", "url": "https://github.com/francisbesset/gitlib.git" },
+        { "type": "git", "url": "https://github.com/francisbesset/git-bundle.git" }
+    ],
     "scripts": {
         "post-install-cmd": [
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",

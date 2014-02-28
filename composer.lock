@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e292b7b822a7def2f8f0976912ecee10",
+    "hash": "5f78c81049572d745fa35db6e5b48a43",
     "packages": [
         {
             "name": "alexandresalome/mailcatcher",
@@ -773,18 +773,12 @@
         },
         {
             "name": "gitonomy/git-bundle",
-            "version": "v0.2.1",
+            "version": "dev-fix_bad_links",
             "target-dir": "Gitonomy/Bundle/GitBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/gitonomy/git-bundle.git",
-                "reference": "853cf4589511f567480895929ae69b8ed6877e98"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/gitonomy/git-bundle/zipball/853cf4589511f567480895929ae69b8ed6877e98",
-                "reference": "853cf4589511f567480895929ae69b8ed6877e98",
-                "shasum": ""
+                "url": "https://github.com/francisbesset/git-bundle.git",
+                "reference": "ffbee099b491f1b5e809e2d959f0f4d6fe235e1c"
             },
             "require": {
                 "gitonomy/gitlib": "~0.1"
@@ -802,7 +796,6 @@
                     "Gitonomy\\Bundle\\GitBundle\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Alexandre Salomé",
@@ -817,21 +810,15 @@
             ],
             "description": "Provides git related features for PHP applications",
             "homepage": "http://gitonomy.com",
-            "time": "2014-02-28 16:50:28"
+            "time": "2014-02-28 17:00:05"
         },
         {
             "name": "gitonomy/gitlib",
-            "version": "v0.1.5",
+            "version": "dev-add_slug_option",
             "source": {
                 "type": "git",
-                "url": "https://github.com/gitonomy/gitlib.git",
-                "reference": "158879a951ca47913a6a3ff2e916aaac0e372cc8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/gitonomy/gitlib/zipball/158879a951ca47913a6a3ff2e916aaac0e372cc8",
-                "reference": "158879a951ca47913a6a3ff2e916aaac0e372cc8",
-                "shasum": ""
+                "url": "https://github.com/francisbesset/gitlib.git",
+                "reference": "fc57257e270f4ce7e50f1a1b260d0669a57cb6ed"
             },
             "require": {
                 "symfony/process": "<3"
@@ -851,7 +838,6 @@
                     ]
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -869,7 +855,7 @@
             ],
             "description": "Library for accessing git",
             "homepage": "http://gitonomy.com",
-            "time": "2014-02-16 23:28:00"
+            "time": "2014-02-28 16:56:28"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -1883,11 +1869,18 @@
         }
     ],
     "aliases": [
-
+        {
+            "alias": "0.1",
+            "alias_normalized": "0.1.0.0",
+            "version": "dev-add_slug_option",
+            "package": "gitonomy/gitlib"
+        }
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "juliendidier/buzz-bundle": 20
+        "juliendidier/buzz-bundle": 20,
+        "gitonomy/git-bundle": 20,
+        "gitonomy/gitlib": 20
     },
     "platform": {
         "php": ">=5.3.3"
