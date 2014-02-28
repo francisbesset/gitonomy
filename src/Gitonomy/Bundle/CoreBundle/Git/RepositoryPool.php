@@ -110,7 +110,9 @@ class RepositoryPool implements EventSubscriberInterface
      */
     public function getGitRepository(Project $project)
     {
-        return new Repository($this->getPath($project));
+        return new Repository($this->getPath($project), array(
+            'slug' => $project->getSlug(),
+        ));
     }
 
     /**
